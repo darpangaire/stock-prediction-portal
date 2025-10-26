@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Header from "./Header";
 
 
 export default function Main() {
@@ -16,7 +17,7 @@ export default function Main() {
             prediction models don’t just look at historical prices; they learn
             patterns from massive datasets.
           </p>
-          <Button text='login' class='btn-outline-warning' />
+          <Button text='login' class='btn-outline-warning' url="/login"/>
         </div>
       </div>
     </>
