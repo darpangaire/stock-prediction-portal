@@ -8,11 +8,13 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Register from './components/Register';
 import { Link } from 'react-router-dom';
 import Login from './components/Login';
+import AuthProvider from './AuthProvider';
 
 function App() {
   
 
   return (
+    <AuthProvider >
     <BrowserRouter>
     <Header /> 
     <Routes>
@@ -25,6 +27,7 @@ function App() {
     
       
     </BrowserRouter>
+    </AuthProvider>
   )
 }
 
